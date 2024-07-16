@@ -321,9 +321,36 @@ footer p {
 
 /* table device responsive */
 
-@media screen and (max-width:991px) {
+@media screen and (min-width:576px) and (max-width:991px) {
     .nav_container {
         flex-direction: column;
+    }
+    .collection_product_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .brand_wrapper {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px 0;
+    }
+    .feature_wrapper {
+        gap: 50px;
+    }
+    .banner_bg {
+        flex-direction: column-reverse;
+    }
+    .banner_content {
+        width: 100%;
+        text-align: center;
+    }
+    .banner_img {
+        width: 100%;
+        text-align: center;
+    }
+    .banner_content h1 {
+        font-size: 2.5rem;
+    }
+    .brand {
+        margin-top: 50px;
     }
 }
 
