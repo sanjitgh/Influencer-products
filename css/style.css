@@ -31,6 +31,10 @@ a {
     margin: 0 auto;
 }
 
+section{
+    padding: 50px 0;
+}
+
 .d-flex {
     display: flex;
 }
@@ -130,6 +134,18 @@ header {
 
 .banner_img img {
     width: 440px;
+}
+
+/* brand style */
+
+.brand_wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 35px 0;
+    border-top: 1px solid #00000010;
+    border-bottom: 1px solid #00000010;
 }
 
 /* media quarry */
