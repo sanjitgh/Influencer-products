@@ -184,6 +184,7 @@ header {
     font-size: 14px;
     font-weight: 700;
     color: #787885;
+    font-family: "Inter", sans-serif;
 }
 
 .product_price {
@@ -259,6 +260,58 @@ header {
 .btn_join {
     border-radius: 0;
 }
+
+/* footer style */
+footer{
+    background-color: #0A0826;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 0.8rem;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+} 
+
+.footer_social_links{
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer_social_link{
+    list-style: none;
+    background: #22203B;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.footer_social_link a{
+    text-decoration: none;
+    color: #fff;
+    transition: color .2s ease-out;
+}
+
+.footer_social_link a:hover{
+    color: var(--button_color);
+}
+
+.footer_social_link svg{
+    font-size: 17px;
+}
+
 
 /* media quarry */
 @media screen and (max-width:1440px) {
