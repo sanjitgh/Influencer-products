@@ -31,7 +31,7 @@ a {
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 50px 0;
 }
 
@@ -43,7 +43,7 @@ section{
     width: 100%;
 }
 
-.btn{
+.btn {
     background-color: var(--button_color);
     border: none;
     border-radius: 100px;
@@ -53,6 +53,11 @@ section{
     padding: 10px 30px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
+}
+
+.space_gap {
+    display: inline-block;
+    width: 3px;
 }
 
 /* header style start */
@@ -99,6 +104,9 @@ header {
 }
 
 /* banner style start */
+.banner {
+    padding: 0;
+}
 
 .banner_bg {
     background: url(../images/Circle\ design.svg);
@@ -115,13 +123,13 @@ header {
     width: 50%;
 }
 
-.banner_content h1{
+.banner_content h1 {
     font-size: 52px;
     font-weight: 700;
     line-height: 70px;
 }
 
-.banner_content p{
+.banner_content p {
     margin: 16px 0;
     font-weight: 600;
     max-width: 582px;
@@ -137,8 +145,11 @@ header {
 }
 
 /* brand style */
+.brand {
+    padding-top: 0;
+}
 
-.brand_wrapper{
+.brand_wrapper {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
@@ -146,6 +157,107 @@ header {
     padding: 35px 0;
     border-top: 1px solid #00000010;
     border-bottom: 1px solid #00000010;
+}
+
+/* collection style  */
+.collection_header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.collection_product_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product_single_box {
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product_single_box p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+
+.product_price {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+}
+
+.product_single_box h2 {
+    font-size: 20px;
+    margin: 6px 0;
+    color: #18191F;
+    font-weight: 500;
+}
+
+.rating {
+    align-items: center;
+}
+
+.rating span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.star img {
+    width: 20px;
+    height: 20px;
+}
+
+.seemore_btn {
+    text-align: end;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.seemore_btn a {
+    text-decoration: none;
+    color: var(--button_color);
+}
+
+.seemore_btn i {
+    margin-left: 5px;
+}
+
+/* feature style */
+.feature_wrapper {
+    align-items: center;
+    gap: 100px;
+}
+
+.feature_left_item {
+    max-width: 410px;
+}
+
+.feature_right_item h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.feature_right_item p {
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin: 16px 0;
+    max-width: 500px;
+}
+
+.btn_join {
+    border-radius: 0;
 }
 
 /* media quarry */
