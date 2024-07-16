@@ -35,7 +35,23 @@ a {
     display: flex;
 }
 
-/* css style start */
+.img_fluid {
+    width: 100%;
+}
+
+.btn{
+    background-color: var(--button_color);
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header style start */
 
 header {
     padding: 30px 0;
@@ -69,16 +85,56 @@ header {
 .nav_img_1 {
     width: 20px;
     height: 20px;
+    margin-top: 10px;
 }
 
 .nav_img_2 {
     width: 24px;
     height: 24px;
+    margin-top: 10px;
+}
+
+/* banner style start */
+
+.banner_bg {
+    background: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner_content {
+    width: 50%;
+}
+
+.banner_content h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.banner_content p{
+    margin: 16px 0;
+    font-weight: 600;
+    max-width: 582px;
+}
+
+.banner_img {
+    width: 50%;
+    text-align: end;
+}
+
+.banner_img img {
+    width: 440px;
 }
 
 /* media quarry */
 @media screen and (max-width:1440px) {
-    .container{
+    .container {
         max-width: 1110px;
     }
 }
