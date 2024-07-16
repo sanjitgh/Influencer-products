@@ -305,8 +305,12 @@ footer p {
 .footer_social_link a:hover {
     color: var(--button_color);
 }
+.mobile_camera{
+    display: none;
+}
 
 /* media quarry */
+
 @media screen and (max-width:1440px) {
     .container {
         max-width: 1110px;
@@ -322,8 +326,17 @@ footer p {
 /* table device responsive */
 
 @media screen and (min-width:576px) and (max-width:991px) {
+    .desktop_camera{
+        display: none;
+    }
+    .mobile_camera{
+        display: block;
+    }
     .nav_container {
         flex-direction: column;
+    }
+    .banner_bg {
+        background: none;
     }
     .collection_product_wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -356,16 +369,28 @@ footer p {
 
 /* mobile device responsive */
 @media screen and (max-width:575px) {
+    .nav_container {
+        flex-direction: column;
+    }
     .nav_links {
         gap: 10px;
     }
     .banner_bg {
-        flex-direction: column;
+        background: none;
+        min-height: auto;
+    }
+
+    .desktop_camera{
+        display: none;
+    }
+    .mobile_camera{
+        display: block;
     }
 
     .banner_bg {
         flex-direction: column-reverse;
         background-position: inherit;
+        gap: 25px;
     }
 
     .banner_content {
@@ -381,10 +406,11 @@ footer p {
     .banner_content h1 {
         font-size: 2rem;
         line-height: normal;
+        
     }
 
     .banner_img img {
-        width: auto;
+        width: 100%;
     }
 
     .brand {
@@ -397,9 +423,7 @@ footer p {
 
     .brand_wrapper {
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px 18px;
-        justify-items: unset;
-        align-items: unset;
+        gap: 30px 0px;
     }
 
     .collection_product_wrapper {
@@ -409,4 +433,8 @@ footer p {
         flex-direction: column-reverse;
         text-align: center;
     }
+    .brand_wrapper img {
+        max-width: 50px;
+    }
+    
 }
