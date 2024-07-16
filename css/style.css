@@ -354,6 +354,7 @@ footer p {
     .banner_content {
         width: 100%;
         text-align: center;
+        margin: 0 auto 20px;
     }
     .banner_img {
         width: 100%;
@@ -365,6 +366,10 @@ footer p {
     .brand {
         margin-top: 50px;
     }
+    .banner_img img {
+        margin: auto;
+    }
+
 }
 
 /* mobile device responsive */
